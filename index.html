@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <main>
+      <div class="wrapper">
+        <div class="select">
+          <select name="geometry" id="gem">
+            <option value="cube" selected="selected">Cube</option>
+            <option value="sphere">Sphere</option>
+            <option value="icosahedron">Icosahedron</option>
+          </select>
+        </div>
+  
+        <input
+          class="input"
+          type="number"
+          name="scale"
+          placeholder="Scale"
+          max="35"
+          min="1"
+          id="num"
+          value="10"
+        />
+  
+        <button class="button" id="add">CREATE</button>
+      </div>
+    </main>
+    <ul id="list" class="list">
+    </ul>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
